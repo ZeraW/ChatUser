@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_headers"
+        app:cardElevation="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ededed"
+
+            >
+            <ImageButton
+                android:id="@+id/backbtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_stat_backbtn"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:tint="#99000000"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/his_imgview"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/backbtn"
+                android:layout_centerVertical="true"
+                android:src="@drawable/camilo"
+                />
+
+            <TextView
+                android:id="@+id/his_nameTxtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/his_imgview"
+                android:layout_toStartOf="@id/phone_call"
+                android:singleLine="true"
+                android:text="his name"
+                android:textSize="18sp"
+                android:textColor="#99000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+            <TextView
+                android:id="@+id/his_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/his_imgview"
+                android:layout_toStartOf="@id/phone_call"
+                android:singleLine="true"
+                android:text="admin"
+                android:visibility="visible"
+                android:textColor="#A9A9A9"
+                android:layout_below="@+id/his_nameTxtview"
+                android:textSize="12sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+            <ImageView
+                android:id="@+id/phone_call"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:padding="8dp"
+                android:visibility="invisible"
+                android:src="@drawable/ic_stat_phone"
+                android:tint="@color/colorPrimaryDark"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/message_swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/message_headers">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/messages_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chat_app_bar">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageButton
+            android:id="@+id/chat_add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_add_black_24dp" />
+
+        <EditText
+            android:id="@+id/chat_message_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="Enter Message..."
+            android:inputType="textPersonName"
+            android:paddingBottom="12dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="14dp" />
+
+        <ImageButton
+            android:id="@+id/chat_send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_send_black_24dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

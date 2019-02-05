@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.88"
+    android:background="@drawable/camilo">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:layout_marginTop="86dp"
+        android:text="@string/Welcome" />
+
+    <EditText
+        android:id="@+id/Login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:hint="@string/hint_email"
+        android:inputType="textPersonName"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="15dp" />
+
+    <EditText
+        android:id="@+id/Login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Login_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:hint="@string/hint_password"
+        android:inputType="textPersonName"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="15dp" />
+
+    <Button
+        android:id="@+id/Login_doLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Login_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_background"
+        android:backgroundTint="#99ffffff"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="15dp"
+        android:text="@string/log_in"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/Login_SignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Login_doLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_background"
+        android:backgroundTint="#99ffffff"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="15dp"
+        android:text="@string/Register"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+
+        android:textColor="@android:color/white" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_logIn"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="true"
+        android:layout_marginTop="14dp"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

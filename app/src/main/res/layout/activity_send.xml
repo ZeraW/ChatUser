@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.88"
+    android:background="@drawable/camilo"
+ >
+
+
+    <TextView
+        android:id="@+id/Send_sendto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Send_Message"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="Send to : "
+        android:textColor="@color/textTabLight"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Send_Message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:hint="@string/hint_note"
+        android:inputType="textPersonName"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="15dp" />
+
+    <Button
+        android:id="@+id/Send_doSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Send_Message"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/input_background"
+        android:backgroundTint="#99ffffff"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="15dp"
+        android:text="@string/send_note"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/Send_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

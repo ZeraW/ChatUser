@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ChatUser</string>
+
+    <string name="profile">Profile</string>
+    <string name="all_user">All Users</string>
+    <string name="notifications">Notifications</string>
+
+    <string name="log_in">Login to my Account</string>
+
+    <string name="log_Out">Logout from this Account</string>
+
+    <string name="backTo_log_in">Back to Login</string>
+
+    <string name="Register">Need a New Account ?</string>
+    <string name="send_note">Send Notification</string>
+
+
+    <string name="Welcome">Welcome to PushPush Notification App</string>
+
+    <string name="Create_account">Create a new Account</string>
+    <string name="SignUp">Sign Up</string>
+
+
+    <string name="hint_name">Name</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_note">Notifications</string>
+
+
+    <string name="channela_name">PushPushCN</string>
+    <string name="channel_description">this is notification channel for PushPush app</string>
+
+</resources>

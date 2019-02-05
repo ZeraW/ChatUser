@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1003318899894",
+    "firebase_url": "https://teleone-94b12.firebaseio.com",
+    "project_id": "teleone-94b12",
+    "storage_bucket": "teleone-94b12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003318899894:android:e99f6096496180b9",
+        "android_client_info": {
+          "package_name": "com.teleone.chatuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003318899894-h3c9ph5nn9a1n0upen05n050uksgkjr3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teleone.chatuser",
+            "certificate_hash": "6bdc57f225f28aa72c4b6563d35d701be4a7b00d"
+          }
+        },
+        {
+          "client_id": "1003318899894-n4veavrmqh3at9vfa1ed2n50d6q8li1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8eI7V3uMAuxDpaqm7y1qAgod1oIP5hUc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003318899894-n4veavrmqh3at9vfa1ed2n50d6q8li1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
